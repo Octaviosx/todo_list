@@ -3,8 +3,8 @@ class TodoController:
         self.model = model
         self.view = view
         
-        self.view.buttonAdd.config(command=self.add_task)
-        self.view.buttonDelete.config(command=self.delete_task)
+        self.view.buttonAdd.configure(command=self.add_task)
+        self.view.buttonDelete.configure(command=self.delete_task)
         
     def add_task(self):
         task = self.view.get_task_ingressed()
